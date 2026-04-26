@@ -21,7 +21,7 @@ btn_left = QPushButton("право")
 btn_right = QPushButton("лево")
 btn_flip = QPushButton("резкость")
 btn_sharp = QPushButton("зеркальность")
-btn_bw = QPushButton("Ч/Б")
+btn_bw = QPushButton("Ч")
 btn_save = QPushButton("Сбросить фильтры")  
 btn_reset = QPushButton("Сохранить")  
 
