@@ -72,17 +72,17 @@ def showFilenamesList():
 btn_dir.clicked.connect(showFilenamesList)
 
 class ImageProcessor():
-    def __init__(self):
-        self.image = None 
-        self.dir = None
-        self.filename = None
-        self.save_dir = "Modified/"
-
     def loadImage(self, dir, filename):
         self.dir = dir
         self.filename = filename
         image_path = os.path.join(dir, filename)
         self.image = Image.open(image_path)
+
+    def __init__(self):
+        self.image = None 
+        self.dir = None
+        self.filename = None
+        self.save_dir = "Modified/"
 
     def showImage(self, path):
         pixmapimage = QPixmap(path)
